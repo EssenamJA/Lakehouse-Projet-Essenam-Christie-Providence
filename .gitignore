@@ -1,0 +1,40 @@
+# =========================
+# Python-generated files
+# =========================
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+
+# =========================
+# dbt generated artifacts
+# =========================
+target/
+logs/
+dbt_modules/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# IMPORTANT
+# =========================
+# profiles.yml is intentionally versioned
+# profiles.yml
