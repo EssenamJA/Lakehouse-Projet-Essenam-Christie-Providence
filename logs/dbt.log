@@ -1,0 +1,72 @@
+[0m10:57:17.969990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61D37D160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61AEC4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61F4F3C50>]}
+
+
+============================== 10:57:18.089907 | fd48457d-4f94-4d44-bd7f-fa4c4182f9dd ==============================
+[0m10:57:18.089907 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:57:18.090729 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence', 'use_colors': 'True', 'invocation_command': 'dbt build', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence\\logs'}
+[0m10:57:18.094350 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m10:57:18.095028 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "shop", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m10:57:18.096284 [debug] [MainThread]: Command `dbt build` failed at 10:57:18.095855 after 0.31 seconds
+[0m10:57:18.096763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61E50F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61F550A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A61E39DBF0>]}
+[0m10:57:18.097184 [debug] [MainThread]: Flushing usage events
+[0m10:57:18.806482 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:58:45.735660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C11BCD160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C0F714190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C12D73C50>]}
+
+
+============================== 10:58:45.739834 | 9799594d-8b0b-44fb-9715-f40636faadb4 ==============================
+[0m10:58:45.739834 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:58:45.740545 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence', 'indirect_selection': 'eager', 'invocation_command': 'dbt build', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence\\logs'}
+[0m10:58:45.743805 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m10:58:45.744532 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "shop", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m10:58:45.745388 [debug] [MainThread]: Command `dbt build` failed at 10:58:45.745287 after 0.18 seconds
+[0m10:58:45.745660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C12D5F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C12DD0A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C12BEDBF0>]}
+[0m10:58:45.745961 [debug] [MainThread]: Flushing usage events
+[0m10:58:46.609549 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:18:02.522095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32463D160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D322184190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3257E3C50>]}
+
+
+============================== 11:18:02.526242 | 84d0209d-c6db-4785-813b-6ffced22fb79 ==============================
+[0m11:18:02.526242 [info ] [MainThread]: Running with dbt=1.11.2
+[0m11:18:02.527223 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt build', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence\\logs'}
+[0m11:18:02.579402 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "wintershop", target "dev" invalid: '6543' is not of type 'integer'
+[0m11:18:02.580616 [debug] [MainThread]: Command `dbt build` failed at 11:18:02.580471 after 0.24 seconds
+[0m11:18:02.580928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D325875810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D326925250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D32565EF10>]}
+[0m11:18:02.581235 [debug] [MainThread]: Flushing usage events
+[0m11:18:03.294459 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:21:10.472106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B41239D160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40FEE4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B414513C50>]}
+
+
+============================== 11:21:10.476292 | 158f8e5d-999c-4df5-b3a9-d4ba1761c577 ==============================
+[0m11:21:10.476292 [info ] [MainThread]: Running with dbt=1.11.2
+[0m11:21:10.477177 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence', 'invocation_command': 'dbt build', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\essen\\OneDrive\\Documents\\MASTER DATA ANNEE 2\\DATALAKE\\PROJET WINTER SPORT\\Lakehouse-Projet-Essenam-Christie-Providence\\logs'}
+[0m11:21:10.688026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '158f8e5d-999c-4df5-b3a9-d4ba1761c577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B412831F30>]}
+[0m11:21:10.741945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '158f8e5d-999c-4df5-b3a9-d4ba1761c577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4133BFDF0>]}
+[0m11:21:10.743681 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m11:21:10.955451 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m11:21:10.956620 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:21:10.957342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '158f8e5d-999c-4df5-b3a9-d4ba1761c577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B414C77650>]}
+[0m11:21:12.680169 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.shop
+[0m11:21:12.684777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '158f8e5d-999c-4df5-b3a9-d4ba1761c577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4132BA7B0>]}
+[0m11:21:12.718496 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\essen\OneDrive\Documents\MASTER DATA ANNEE 2\DATALAKE\PROJET WINTER SPORT\Lakehouse-Projet-Essenam-Christie-Providence\target\manifest.json
+[0m11:21:12.725320 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\essen\OneDrive\Documents\MASTER DATA ANNEE 2\DATALAKE\PROJET WINTER SPORT\Lakehouse-Projet-Essenam-Christie-Providence\target\semantic_manifest.json
+[0m11:21:13.413747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '158f8e5d-999c-4df5-b3a9-d4ba1761c577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B416353CB0>]}
+[0m11:21:13.414330 [info ] [MainThread]: Found 464 macros
+[0m11:21:13.416103 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:21:13.417006 [debug] [MainThread]: Command end result
+[0m11:21:13.432395 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\essen\OneDrive\Documents\MASTER DATA ANNEE 2\DATALAKE\PROJET WINTER SPORT\Lakehouse-Projet-Essenam-Christie-Providence\target\manifest.json
+[0m11:21:13.435235 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\essen\OneDrive\Documents\MASTER DATA ANNEE 2\DATALAKE\PROJET WINTER SPORT\Lakehouse-Projet-Essenam-Christie-Providence\target\semantic_manifest.json
+[0m11:21:13.438325 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\essen\OneDrive\Documents\MASTER DATA ANNEE 2\DATALAKE\PROJET WINTER SPORT\Lakehouse-Projet-Essenam-Christie-Providence\target\run_results.json
+[0m11:21:13.438998 [debug] [MainThread]: Command `dbt build` succeeded at 11:21:13.438887 after 3.16 seconds
+[0m11:21:13.439323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4151F7EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4131E7F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B414F0F950>]}
+[0m11:21:13.439631 [debug] [MainThread]: Flushing usage events
+[0m11:21:14.114336 [debug] [MainThread]: An error was encountered while trying to flush usage events

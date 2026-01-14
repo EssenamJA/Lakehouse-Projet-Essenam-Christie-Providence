@@ -1,0 +1,13 @@
+wintershop:
+
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: '51.77.215.42'
+      user: 'wintershop'
+      password: 'wintershop'
+      port: 6543
+      dbname: 'wintershop_student'
+      schema: 'wintershop_prod'
+      threads: 24
