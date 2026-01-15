@@ -11,3 +11,42 @@ wintershop:
       dbname: 'wintershop_student'
       schema: 'wintershop_prod'
       threads: 24
+
+christie :
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: '51.77.215.42'
+      user: 'wintershop'
+      password: 'wintershop'
+      port: 6543
+      dbname: 'wintershop_student'
+      schema: 'wintershop_christie'
+      threads: 24
+
+essenam :
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: '51.77.215.42'
+      user: 'wintershop'
+      password: 'wintershop'
+      port: 6543
+      dbname: 'wintershop_student'
+      schema: 'wintershop_essenam'
+      threads: 24
+
+provie :
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: '51.77.215.42'
+      user: 'wintershop'
+      password: 'wintershop'
+      port: 6543
+      dbname: 'wintershop_student'
+      schema: 'wintershop_provie'
+      threads: 24
