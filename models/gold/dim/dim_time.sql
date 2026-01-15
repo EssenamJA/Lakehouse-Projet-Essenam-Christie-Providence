@@ -1,6 +1,6 @@
 WITH times AS (
     SELECT DISTINCT
-        date_trunc('hour', event_ts) AS hour
+        event_ts AS hour
     FROM {{ ref('silver') }}
     WHERE event_ts IS NOT NULL
 )

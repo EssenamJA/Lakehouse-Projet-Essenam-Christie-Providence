@@ -2,7 +2,7 @@ WITH logs_silver AS (
 
     SELECT
         page,
-        date_trunc('hour', event_ts) AS hour
+        event_ts AS hour
     FROM {{ ref('silver') }}
 
 ),
@@ -30,11 +30,11 @@ renamed AS (
     SELECT
         dp.page_id,
         dt.time_id
-    FROM silver ls
+    FROM {{ ref('silver') }} ls
     JOIN dim_page dp
         ON ls.page = dp.page
     JOIN dim_time dt
-        ON ls.hour = dt.hour
+        ON ls.event_ts = dt.hour
 
 )
 
