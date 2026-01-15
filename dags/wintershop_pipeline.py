@@ -25,7 +25,7 @@ with DAG(
 
     dbt_run = BashOperator(    
         task_id='dbt_run', 
-        bash_command='cd /opt/airflow/project && dbt run ',   
+        bash_command='cd /opt/airflow/project && dbt run --target prod',   
         )
 
     # Dépendance : ingestion -> dbt
