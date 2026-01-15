@@ -2,7 +2,7 @@ WITH logs_silver AS (
 
     SELECT
         LOWER(referer) AS referer,
-        date_trunc('hour', event_ts) AS hour
+        event_ts AS hour
     FROM {{ ref('silver') }}
     WHERE referer IS NOT NULL
 
@@ -31,11 +31,11 @@ joined AS (
     SELECT
         dr.referer_id,
         dt.time_id
-    FROM silver ls
+    FROM {{ ref('silver') }} ls
     JOIN dim_referer dr
         ON ls.referer = dr.referer
     JOIN dim_time dt
-        ON ls.hour = dt.hour
+        ON ls.event_ts = dt.hour
 
 )
 
