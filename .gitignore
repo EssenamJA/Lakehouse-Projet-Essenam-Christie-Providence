@@ -38,3 +38,13 @@ Thumbs.db
 # =========================
 # profiles.yml is intentionally versioned
 # profiles.yml
+
+.venv/
+.env
+__pycache__/
+target/
+logs/
+dbt_modules/
+dbt_packages/
+**/.ipynb_checkpoints/
+
