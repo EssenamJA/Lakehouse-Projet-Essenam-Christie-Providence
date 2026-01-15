@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: silver
+    description: >
+      Table Silver contenant les logs web nettoyés et parsés.
+      Chaque ligne correspond à une requête HTTP avec les champs
+      structurés (IP, timestamp, page, statut, referer, user agent).
+      La table est utilisée comme base pour les agrégations Gold.
+
+    columns:
+      - name: ip
+        description: Adresse IP du client
+        tests:
+          - not_null
+
+      - name: event_ts
+        description: Timestamp de l'événement extrait du log Apache
+        tests:
+          - not_null
+
+      - name: request
+        description: Requête HTTP complète (méthode + ressource + version)
+
+      - name: http_method
+        description: Méthode HTTP utilisée (GET, POST, etc.)
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS']
+
+      - name: page
+        description: URL demandée par le client
+
+      - name: page_clean
+        description: URL normalisée (minuscules, sans slash final)
+
+      - name: status_code
+        description: Code de statut HTTP retourné par le serveur
+        tests:
+          - not_null
+          - accepted_values:
+              values: [200, 301, 302, 400, 401, 403, 404, 500, 503]
+
+      - name: referer
+        description: URL de provenance de la requête (page précédente)
+
+      - name: referer_host
+        description: Nom de domaine extrait du referer
+
+      - name: user_agent
+        description: User-Agent du client (navigateur, bot, mobile…)
+
+      - name: is_bot
+        description: Indique si la requête provient d’un bot
+        tests:
+          - not_null
