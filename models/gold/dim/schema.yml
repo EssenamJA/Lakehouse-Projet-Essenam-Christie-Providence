@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: dim_page
+    description: Dimension des pages du site
+    columns:
+      - name: page_id
+        tests:
+          - not_null
+          - unique
+
+      - name: page
+        tests:
+          - not_null
+
+  - name: dim_time
+    description: Dimension temporelle à l'heure
+    columns:
+      - name: time_id
+        tests:
+          - not_null
+          - unique
+
+      - name: hour
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_referer
+    description: Dimension des referers
+    columns:
+      - name: referer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: referer
+        tests:
+          - not_null
+
+      - name: referer_type
+        tests:
+          - accepted_values:
+              values: ['google', 'other']
+
+  - name: dim_device
+    description: Dimension des devices
+    columns:
+      - name: device_id
+        tests:
+          - not_null
+          - unique
+
+      - name: device_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['mobile', 'desktop']
+
+      - name: browser
+        tests:
+          - not_null

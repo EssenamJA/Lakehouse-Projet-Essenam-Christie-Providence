@@ -41,3 +41,4 @@ wintershop:
       dbname: 'wintershop_student'
       schema: 'wintershop_provie'
       threads: 24
+      
