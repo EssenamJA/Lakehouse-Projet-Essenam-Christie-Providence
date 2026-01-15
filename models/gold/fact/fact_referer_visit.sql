@@ -31,7 +31,7 @@ joined AS (
     SELECT
         dr.referer_id,
         dt.time_id
-    FROM logs_silver ls
+    FROM silver ls
     JOIN dim_referer dr
         ON ls.referer = dr.referer
     JOIN dim_time dt

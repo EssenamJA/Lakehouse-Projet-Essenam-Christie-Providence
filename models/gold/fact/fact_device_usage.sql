@@ -34,7 +34,7 @@ joined AS (
         dd.device_id,
         dt.time_id,
         ls.ip
-    FROM logs_silver ls
+    FROM silver ls
     JOIN dim_device dd
         ON ls.device_type = dd.device_type
        AND ls.browser = dd.browser

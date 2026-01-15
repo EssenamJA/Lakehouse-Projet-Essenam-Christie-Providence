@@ -31,7 +31,7 @@ joined AS (
     SELECT
         dp.page_id,
         dt.time_id
-    FROM logs_silver ls
+    FROM silver ls
     JOIN dim_page dp
         ON ls.page = dp.page
     JOIN dim_time dt
