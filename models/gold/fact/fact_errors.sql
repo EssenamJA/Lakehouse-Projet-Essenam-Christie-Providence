@@ -4,6 +4,7 @@ WITH logs_silver AS (
         page,
         date_trunc('hour', event_ts) AS hour
     FROM {{ ref('silver') }}
+    WHERE status_code >= 400
 
 ),
 
@@ -25,7 +26,7 @@ dim_time AS (
 
 ),
 
-renamed AS (
+joined AS (
 
     SELECT
         dp.page_id,
@@ -39,8 +40,10 @@ renamed AS (
 )
 
 SELECT
-    page_id,
-    time_id,
-    COUNT(*) AS nb_hits
-FROM renamed
-GROUP BY page_id, time_id
+    j.page_id,
+    j.time_id,
+    COUNT(*) AS nb_errors
+FROM joined j
+GROUP BY
+    j.page_id,
+    j.time_id
