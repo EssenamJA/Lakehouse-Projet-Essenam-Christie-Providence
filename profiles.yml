@@ -1,8 +1,8 @@
 wintershop:
 
-  target: dev
+  target: essenam
   outputs:
-    dev:
+    prod:
       type: postgres
       host: '51.77.215.42'
       user: 'wintershop'
@@ -12,10 +12,7 @@ wintershop:
       schema: 'wintershop_prod'
       threads: 24
 
-christie :
-  target: dev
-  outputs:
-    dev:
+    christie :
       type: postgres
       host: '51.77.215.42'
       user: 'wintershop'
@@ -25,10 +22,7 @@ christie :
       schema: 'wintershop_christie'
       threads: 24
 
-essenam :
-  target: dev
-  outputs:
-    dev:
+    essenam :
       type: postgres
       host: '51.77.215.42'
       user: 'wintershop'
@@ -38,10 +32,7 @@ essenam :
       schema: 'wintershop_essenam'
       threads: 24
 
-provie :
-  target: dev
-  outputs:
-    dev:
+    provie :
       type: postgres
       host: '51.77.215.42'
       user: 'wintershop'
@@ -50,3 +41,4 @@ provie :
       dbname: 'wintershop_student'
       schema: 'wintershop_provie'
       threads: 24
+      
