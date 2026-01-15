@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: Nombre de hits par page et par heure
+    columns:
+      - name: page_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_page')
+              field: page_id
+
+      - name: time_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_time')
+              field: time_id
+
+      - name: nb_hits
+        tests:
+          - not_null
+
+  - name: fact_referer_visits
+    description: Volume de visites par referer et heure
+    columns:
+      - name: referer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_referer')
+              field: referer_id
+
+      - name: time_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_time')
+              field: time_id
+
+      - name: nb_visits
+        tests:
+          - not_null
+
+  - name: fact_device_usage
+    description: Répartition des visiteurs par device et heure
+    columns:
+      - name: device_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_device')
+              field: device_id
+
+      - name: time_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_time')
+              field: time_id
+
+      - name: nb_visitors
+        tests:
+          - not_null
+
+  - name: fact_errors
+    description: Nombre d'erreurs HTTP par page et heure
+    columns:
+      - name: page_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_page')
+              field: page_id
+
+      - name: time_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_time')
+              field: time_id
+
+      - name: nb_errors
+        tests:
+          - not_null
